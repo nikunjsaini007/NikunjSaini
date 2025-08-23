@@ -336,3 +336,31 @@ a {
   text-decoration: none;
   color: inherit;     
 }
+
+.navbar-social{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: #ffffff;
+  font-size: 21px;
+  
+}
+
+.navbar-social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease
+}
+
+
+
+.navbar-social .icon i:hover{
+  transform: scale(1.3);
+  color: #ff4b2b;     
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
