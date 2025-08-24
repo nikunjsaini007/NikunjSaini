@@ -404,12 +404,6 @@ a {
    nav {
     flex-direction: column;
     align-items: center;
-    height: 60px;
-    padding: 0 10px;
-  }
-
-  body {
-    padding-top: 60px;
   }
 
   .navbar-goto {
@@ -527,6 +521,7 @@ a {
   }
 
 }
+
 
 
 
