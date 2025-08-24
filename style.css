@@ -9,6 +9,12 @@ nav {
   font-family: "Poppins", sans-serif;
   padding: 10px 20px;
   gap: 25px;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  background-color: #2b0f0f;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar-mylogo a {
@@ -353,7 +359,7 @@ a {
   align-items: center;
   position: absolute;
   top: 20px;
-  right: 25px;
+  right: 60px;
   color: #ffffff;
   font-size: 21px;
 }
@@ -508,4 +514,5 @@ a {
     font-size: 12px;
     padding: 40px 0;
   }
+
 }
