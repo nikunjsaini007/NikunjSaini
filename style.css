@@ -29,13 +29,14 @@ nav {
   font-size: 18px;
   font-weight: 600;
   gap: 3px;
+  top: 20px;
+  left: 60px;
 }
 
 .navbar-goto {
   display: flex;
   align-items: center;
   gap: 20px;
-  
 }
 
 .navbar-goto a {
@@ -72,7 +73,7 @@ nav {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 140px;
   font-size: 45px;
 }
 
@@ -104,17 +105,9 @@ nav {
 }
 
 @keyframes smooth-blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .sub-welcome {
@@ -186,9 +179,7 @@ nav {
   list-style-type: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 .highlight {
   font-weight: bold;
@@ -301,10 +292,7 @@ html {
   z-index: 1;
 }
 
-.project-content p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+.project-content p { font-size: 18px; margin-bottom: 10px; }
 
 .project-content .tech {
   font-size: 0.93rem;
@@ -353,10 +341,7 @@ html {
   font-size: 15px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+a { text-decoration: none; color: inherit; }
 
 .navbar-social {
   display: flex;
@@ -383,17 +368,16 @@ a {
   cursor: pointer;
 }
 
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
-  .description {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .about-me-text {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
+  .description,
+  .about-me-text,
   .experience-text {
     margin-left: 50px;
     margin-right: 50px;
@@ -401,21 +385,51 @@ a {
 }
 
 @media (max-width: 768px) {
-   nav {
-    flex-direction: column;
-    align-items: center;
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 15px;
   }
 
-  .navbar-goto {
+  body { padding-top: 60px; }
+
+  .hamburger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    z-index: 1100;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .navbar-goto,
+  .navbar-social {
+    display: none;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    background-color: #2b0f0f;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar-goto.active,
+  .navbar-social.active {
+    display: flex;
+  }
+
+  .navbar-goto a {
+    padding: 10px 0;
+    font-size: 16px;
   }
 
   .navbar-social {
     position: static;
-    margin-top: 15px;
+    margin-top: 10px;
     justify-content: center;
+    gap: 15px;
   }
 
   .welcome {
@@ -487,41 +501,24 @@ a {
     width: 90%;
     height: auto;
   }
+
+  .hamburger {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
-  .welcome {
-    font-size: 28px;
-    margin-top: 60px;
-  }
-
-  .sub-welcome {
-    font-size: 18px;
-  }
-
-  .description {
-    font-size: 15px;
-  }
-
-  .about-me {
-    font-size: 24px;
-  }
-
-  .experience {
-    font-size: 24px;
-  }
-
-  .projects {
-    font-size: 24px;
-  }
-
-  .site-footer {
-    font-size: 12px;
-    padding: 40px 0;
-  }
-
+  .welcome { font-size: 28px; margin-top: 60px; }
+  .sub-welcome { font-size: 18px; }
+  .description { font-size: 15px; }
+  .about-me { font-size: 24px; }
+  .experience { font-size: 24px; }
+  .projects { font-size: 24px; }
+  .site-footer { font-size: 12px; padding: 40px 0; }
 }
 
+.menu-toggle { display: none; }
 
-
-
+.hamburger i {
+    color: #ffffff;
+}
