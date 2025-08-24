@@ -1,5 +1,7 @@
 body {
   background-color: #2b0f0f;
+  margin: 0;
+  padding-top: 70px;
 }
 
 nav {
@@ -31,6 +33,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
+  top: 20px;
+  left: 60px;
 }
 
 .navbar-goto a {
@@ -516,3 +520,4 @@ a {
   }
 
 }
+
