@@ -27,14 +27,15 @@ nav {
   font-size: 18px;
   font-weight: 600;
   gap: 3px;
+  top: 20px;
+  left: 60px;
 }
 
 .navbar-goto {
   display: flex;
   align-items: center;
   gap: 20px;
-  top: 20px;
-  left: 60px;
+  
 }
 
 .navbar-goto a {
@@ -520,4 +521,5 @@ a {
   }
 
 }
+
 
