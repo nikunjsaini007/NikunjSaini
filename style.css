@@ -144,14 +144,15 @@ nav {
 }
 
 .photo img {
-  width: auto;
-  height: 490px;
+  width: 270px;
+  height: 500px;
   border-radius: 5%;
   transition: box-shadow 0.3s ease;
   float: right;
   margin-right: 100px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
+
 
 .photo img:hover {
   box-shadow: 0 0 20px #e63946;
@@ -522,3 +523,4 @@ a { text-decoration: none; color: inherit; }
 .hamburger i {
     color: #ffffff;
 }
+
